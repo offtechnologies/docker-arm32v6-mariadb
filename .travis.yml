@@ -8,7 +8,7 @@ script:
 # build image
 - docker build -t offtechnologies/docker-arm32v6-mariadb .
 # test image
-- docker run offtechnologies/docker-arm32v6-mariadb uname -a
+#- docker run offtechnologies/docker-arm32v6-mariadb uname -a
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
